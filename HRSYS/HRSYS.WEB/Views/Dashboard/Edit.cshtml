@@ -1,0 +1,19 @@
+﻿<h2>Edit Employee</h2>
+
+<form method="post">
+    <input type="hidden" name="empID" value="@Model.empID" />
+
+    <label>Full Name</label>
+    <input name="fullName" class="form-control" value="@Model.fullName" required />
+
+    <label>Email</label>
+    <input name="email" class="form-control" value="@Model.email" required />
+
+    <label>Salary</label>
+    <input name="salary" type="number" class="form-control" value="@Model.salary" required />
+
+    <label>Department</label>
+    <input name="department" class="form-control" value="@Model.department" required />
+
+    <button class="btn btn-primary mt-3">Update</button>
+</form>

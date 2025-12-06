@@ -1,0 +1,126 @@
+
+.page-header {
+    animation: slideUp 0.6s ease forwards;
+}
+
+.page-header .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.page-header .page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.page-header .page-title i {
+    color: var(--primary-accent);
+}
+
+.search-form {
+    margin-bottom: 2rem;
+}
+
+.search-form .input-frame {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-form .input-frame i {
+    position: absolute;
+    left: 12px;
+    color: var(--muted);
+    pointer-events: none;
+}
+
+.search-form .form-control {
+    padding-left: 40px;
+}
+
+.table-responsive {
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.table-responsive.card {
+    box-shadow: var(--shadow-soft);
+}
+
+.badge {
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.badge.bg-secondary {
+    background: rgba(105, 234, 255, 0.15) !important;
+    color: var(--primary-accent);
+}
+
+.badge.bg-info {
+    background: rgba(108, 92, 231, 0.15) !important;
+    color: var(--primary);
+}
+
+.alert {
+    border-radius: 18px;
+    padding: 16px 20px;
+    border: none;
+    text-transform: none;
+    letter-spacing: 0;
+    animation: slideUp 0.5s ease;
+}
+
+.alert i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.alert-warning {
+    background: rgba(254, 202, 87, 0.15);
+    border: 1px solid rgba(254, 202, 87, 0.3);
+    color: #feca57;
+}
+
+.alert.text-center p {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+@media (max-width: 768px) {
+    .page-header .page-title {
+        font-size: 1.5rem;
+    }
+
+    .page-header .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .table {
+        font-size: 0.85rem;
+    }
+
+    .table thead th,
+    .table td {
+        padding: 8px 12px;
+    }
+
+    .btn-sm {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+}

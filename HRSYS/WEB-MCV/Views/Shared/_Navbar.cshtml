@@ -1,0 +1,66 @@
+﻿@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    var token = HttpContextAccessor.HttpContext!.Session.GetString("jwt");
+    bool isLoggedIn = !string.IsNullOrEmpty(token);
+}
+
+<header class="app-header">
+    <nav class="main-nav glass-panel" data-navbar>
+        <div class="brand">
+            <div class="brand-icon">
+                <span>HR</span>
+            </div>
+            <div class="brand-copy">
+                <strong>HRSYS Portal</strong>
+                <small>People & Culture Experience</small>
+            </div>
+        </div>
+
+        <button class="nav-toggle" type="button" data-nav-toggle aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="nav-menu" data-nav-menu">
+
+            @if (!isLoggedIn)
+            {
+                <a class="nav-link" href="/">Home</a>
+            }
+
+            @if (isLoggedIn)
+            {
+                <a class="nav-link" href="/Employee/Index">Employees</a>
+                <a class="nav-link" href="/Employee/Create">Create</a>
+            }
+            else
+            {
+                <a class="nav-link" href="/Auth/Login">Login</a>
+                <a class="nav-link" href="/Auth/Register">Register</a>
+            }
+        </div>
+
+        <div class="nav-actions">
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">
+                <span class="theme-label">Light</span>
+            </button>
+
+            @if (isLoggedIn)
+            {
+                <a class="btn-cta" href="/Auth/Logout">
+                    Logout
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+            }
+            else
+            {
+                <a class="btn-cta" href="/Auth/Login">
+                    Start Now
+                    <i class="fa-solid fa-rocket"></i>
+                </a>
+            }
+        </div>
+    </nav>
+</header>

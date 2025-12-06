@@ -1,0 +1,23 @@
+﻿<div id="toast" class="toast-shell" role="status" aria-live="polite"></div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+@* success *@
+        @if (TempData["Success"] != null)
+        {
+                <text>showToast("success", "@TempData["Success"]");</text>
+        }
+
+@* error *@
+        @if (TempData["Error"] != null)
+        {
+                <text>showToast("danger", "@TempData["Error"]");</text>
+        }
+
+@* warn *@
+        @if (TempData["Warning"] != null)
+        {
+                <text>showToast("warning", "@TempData["Warning"]");</text>
+        }
+    });
+</script>

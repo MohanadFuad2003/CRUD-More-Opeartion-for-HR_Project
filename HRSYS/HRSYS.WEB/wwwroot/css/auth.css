@@ -1,0 +1,38 @@
+﻿.auth-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eef1f7;
+}
+
+.auth-card {
+    width: 380px;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+    animation: fadeIn .8s;
+}
+
+    .auth-card input,
+    .auth-card select {
+        margin-bottom: 12px;
+        height: 42px;
+    }
+
+    .auth-card h3 {
+        font-weight: 700;
+    }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

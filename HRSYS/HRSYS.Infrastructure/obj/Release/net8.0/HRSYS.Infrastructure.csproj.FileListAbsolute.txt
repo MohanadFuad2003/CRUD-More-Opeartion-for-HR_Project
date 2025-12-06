@@ -1,0 +1,15 @@
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Infrastructure\bin\Release\net8.0\HRSYS.Infrastructure.deps.json
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Infrastructure\bin\Release\net8.0\HRSYS.Infrastructure.dll
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Infrastructure\bin\Release\net8.0\HRSYS.Infrastructure.pdb
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Infrastructure\bin\Release\net8.0\HRSYS.Domain.dll
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Infrastructure\bin\Release\net8.0\HRSYS.Domain.pdb
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Infrastructure\obj\Release\net8.0\HRSYS.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Infrastructure\obj\Release\net8.0\HRSYS.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Infrastructure\obj\Release\net8.0\HRSYS.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Infrastructure\obj\Release\net8.0\HRSYS.Infrastructure.AssemblyInfo.cs
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Infrastructure\obj\Release\net8.0\HRSYS.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Infrastructure\obj\Release\net8.0\HRSYS.In.AD985D5A.Up2Date
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Infrastructure\obj\Release\net8.0\HRSYS.Infrastructure.dll
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Infrastructure\obj\Release\net8.0\refint\HRSYS.Infrastructure.dll
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Infrastructure\obj\Release\net8.0\HRSYS.Infrastructure.pdb
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Infrastructure\obj\Release\net8.0\ref\HRSYS.Infrastructure.dll

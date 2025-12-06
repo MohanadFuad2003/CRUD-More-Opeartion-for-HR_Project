@@ -1,0 +1,15 @@
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Application\bin\Release\net8.0\HRSYS.Application.deps.json
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Application\bin\Release\net8.0\HRSYS.Application.dll
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Application\bin\Release\net8.0\HRSYS.Application.pdb
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Application\bin\Release\net8.0\HRSYS.Domain.dll
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Application\bin\Release\net8.0\HRSYS.Domain.pdb
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Application\obj\Release\net8.0\HRSYS.Application.csproj.AssemblyReference.cache
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Application\obj\Release\net8.0\HRSYS.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Application\obj\Release\net8.0\HRSYS.Application.AssemblyInfoInputs.cache
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Application\obj\Release\net8.0\HRSYS.Application.AssemblyInfo.cs
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Application\obj\Release\net8.0\HRSYS.Application.csproj.CoreCompileInputs.cache
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Application\obj\Release\net8.0\HRSYS.Ap.A172AEED.Up2Date
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Application\obj\Release\net8.0\HRSYS.Application.dll
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Application\obj\Release\net8.0\refint\HRSYS.Application.dll
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Application\obj\Release\net8.0\HRSYS.Application.pdb
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Application\obj\Release\net8.0\ref\HRSYS.Application.dll

@@ -1,0 +1,96 @@
+﻿@model HRSYS.Domain.DTOs.EmployeeRegisterDto
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Employee Register";
+}
+
+<section class="auth-grid" data-reveal>
+    <div class="auth-info glass-panel">
+        <p class="eyebrow">Employee Portal</p>
+        <h2>Create Your Account</h2>
+        <p>
+            Join our employee portal and access your profile information easily.
+            Fill in your details to get started.
+        </p>
+        <ul>
+            <li><i class="fa-solid fa-check"></i> Access your profile</li>
+            <li><i class="fa-solid fa-check"></i> View employee details</li>
+            <li><i class="fa-solid fa-check"></i> Secure authentication</li>
+        </ul>
+        <a class="option-link" href="/EmployeePortal/Login">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            Already have an account? Login
+        </a>
+    </div>
+
+    <div class="auth-container">
+        <h2><i class="fa-solid fa-user-plus"></i> Employee Registration</h2>
+        <form method="post" class="form-grid">
+
+            <div class="form-field">
+                <label class="form-label" for="FullName">
+                    <i class="fa-solid fa-user"></i>
+                    Full Name
+                </label>
+                <div class="input-frame">
+                    <input asp-for="FullName" type="text" placeholder="Your Full Name" required />
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label class="form-label" for="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                    Email
+                </label>
+                <div class="input-frame">
+                    <input asp-for="Email" type="email" placeholder="your.email@company.com" required />
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label class="form-label" for="Password">
+                    <i class="fa-solid fa-lock"></i>
+                    Password
+                </label>
+                <div class="input-frame">
+                    <input asp-for="Password" type="password" placeholder="••••••••" required />
+                </div>
+                <small class="field-hint">
+                    <i class="fa-solid fa-info-circle"></i>
+                    Min 6 characters
+                </small>
+            </div>
+
+            <div class="form-field">
+                <label class="form-label" for="Department">
+                    <i class="fa-solid fa-building"></i>
+                    Department
+                </label>
+                <div class="input-frame">
+                    <select asp-for="Department" required>
+                        <option value="">Select Department</option>
+                        <option value="HR">HR</option>
+                        <option value="Sales">Sales</option>
+                        <option value="IT">IT</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Operations">Operations</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label class="form-label" for="Salary">
+                    <i class="fa-solid fa-money-bill"></i>
+                    Salary
+                </label>
+                <div class="input-frame">
+                    <input asp-for="Salary" type="number" placeholder="50000" required />
+                </div>
+            </div>
+
+            <button type="submit" class="btn w-100">
+                <i class="fa-solid fa-arrow-right"></i> Register
+            </button>
+        </form>
+    </div>
+</section>

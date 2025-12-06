@@ -1,0 +1,62 @@
+﻿@model HRSYS.Domain.DTOs.LoginDto
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Login";
+}
+
+<section class="auth-grid" data-reveal>
+    <div class="auth-info glass-panel">
+        <p class="eyebrow">HR Portal</p>
+        <h2>Welcome Back!</h2>
+        <p>
+            Access your HR management portal and manage employees efficiently.
+            Login with your account to continue.
+        </p>
+        <ul>
+            <li><i class="fa-solid fa-check"></i> Manage employees data</li>
+            <li><i class="fa-solid fa-check"></i> View HR operations</li>
+            <li><i class="fa-solid fa-check"></i> Fast and secure login</li>
+        </ul>
+        <a class="option-link" href="/Home/Index">
+            <i class="fa-solid fa-house"></i>
+            Back to Home
+        </a>
+    </div>
+
+    <div class="auth-container">
+        <h2><i class="fa-solid fa-right-to-bracket"></i> Login</h2>
+        <form method="post" class="form-grid">
+            <div class="form-field">
+                <label class="form-label" for="Username">
+                    <i class="fa-solid fa-user"></i>
+                    Username
+                </label>
+                <div class="input-frame">
+                    <input type="text" name="Username" value="@Model?.Username" placeholder="Enter your username" required />
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label class="form-label" for="Password">
+                    <i class="fa-solid fa-lock"></i>
+                    Password
+                </label>
+                <div class="input-frame">
+                    <input type="password" name="Password" value="@Model?.Password" placeholder="••••••••" required />
+                </div>
+            </div>
+
+            <button type="submit" class="btn w-100">
+                <i class="fa-solid fa-arrow-right"></i> Login
+            </button>
+            
+            <div class="auth-footer">
+                <span class="muted">Don't have an account?</span>
+                <a class="option-link" href="/Auth/Register">
+                    Create one now
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </form>
+    </div>
+</section>

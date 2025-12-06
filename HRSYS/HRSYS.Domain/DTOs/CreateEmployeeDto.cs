@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HRSYS.Domain.DTOs
+{
+    public class CreateEmployeeDto
+    {
+        public string FullName { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public decimal Salary { get; set; }
+        public string Department { get; set; } = string.Empty;
+    }
+}

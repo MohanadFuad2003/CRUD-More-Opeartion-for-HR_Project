@@ -1,0 +1,37 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "Register";
+}
+
+<link rel="stylesheet" href="@Url.Content("~/css/auth.css")" />
+
+<div class="auth-container">
+    <div class="auth-card">
+
+        <h3 class="text-center mb-4">📝 Register</h3>
+
+        <form method="post">
+
+            <label>Username</label>
+            <input type="text" name="username" class="form-control" required />
+
+            <label>Password</label>
+            <input type="password" name="password" class="form-control" required />
+
+            <label>Role</label>
+            <select name="role" class="form-select">
+                <option>User</option>
+                <option>HR</option>
+            </select>
+
+            <button class="btn btn-success w-100 mt-3">Register</button>
+
+            <p class="text-center mt-3">
+                <a href="/Account/Login">Back to login</a>
+            </p>
+
+        </form>
+
+    </div>
+</div>
+

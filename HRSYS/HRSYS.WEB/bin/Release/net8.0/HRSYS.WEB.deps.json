@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "HRSYS.WEB/1.0.0": {
+        "runtime": {
+          "HRSYS.WEB.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HRSYS.WEB/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,93 @@
+﻿@model List<HRSYS.Domain.DTOs.EmployeeDto>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Employees";
+}
+
+<div class="page-header" data-reveal>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2 class="page-title">
+                <i class="fa-solid fa-users"></i> Employees
+            </h2>
+            <p class="page-subtitle">Manage and view all employees in the system</p>
+        </div>
+        <a href="/Employee/Create" class="btn btn-success">
+            <i class="fa-solid fa-user-plus"></i> Add Employee
+        </a>
+    </div>
+
+    <form method="get" action="/Employee/Index" class="search-form" data-reveal>
+        <div class="row g-2 mb-4">
+            <div class="col-md-6">
+                <div class="input-frame">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="number"
+                           name="id"
+                           class="form-control"
+                           placeholder="Search by Employee ID..." />
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary w-100">
+                    <i class="fa-solid fa-magnifying-glass"></i> Search
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+@if (Model == null || !Model.Any())
+{
+    <div class="card alert alert-warning text-center" data-reveal>
+        <div class="p-4">
+            <i class="fa-solid fa-inbox"></i>
+            <p class="mb-0">No employees found. Start by adding one!</p>
+        </div>
+    </div>
+}
+else
+{
+    <div class="table-responsive card" data-reveal>
+        <table class="table table-hover mb-0">
+            <thead class="table-primary">
+                <tr>
+                    <th><i class="fa-solid fa-hashtag"></i> ID</th>
+                    <th><i class="fa-solid fa-user"></i> Full Name</th>
+                    <th><i class="fa-solid fa-envelope"></i> Email</th>
+                    <th><i class="fa-solid fa-money-bill"></i> Salary</th>
+                    <th><i class="fa-solid fa-building"></i> Department</th>
+                    <th style="width: 180px;"><i class="fa-solid fa-sliders"></i> Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var e in Model)
+                {
+                    <tr>
+                        <td><strong>#@e.EmpID</strong></td>
+                        <td>@e.FullName</td>
+                        <td>
+                            <span class="badge bg-secondary">@e.Email</span>
+                        </td>
+                        <td>
+                            <strong>@(e.Salary.ToString("C0"))</strong>
+                        </td>
+                        <td>
+                            <span class="badge bg-info">@e.Department</span>
+                        </td>
+                        <td>
+                            <a href="/Employee/Edit/@e.EmpID" class="btn btn-sm btn-primary me-2">
+                                <i class="fa-solid fa-pen-to-square"></i> Edit
+                            </a>
+                            <a href="/Employee/Delete/@e.EmpID" class="btn btn-sm btn-danger" 
+                               onclick="return confirm('Are you sure?')">
+                                <i class="fa-solid fa-trash"></i> Delete
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

@@ -1,0 +1,64 @@
+@model HRSYS.Domain.DTOs.EmployeeLoginDto
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Employee Login";
+}
+
+<section class="auth-grid" data-reveal>
+    <div class="auth-info glass-panel">
+        <p class="eyebrow">
+            <i class="fa-solid fa-id-badge"></i> Employee Portal
+        </p>
+        <h2>Welcome Back!</h2>
+        <p>
+            Logging in here gives you access to all your profile details,
+            and you can view all your information through a simple and clear interface.
+        </p>
+        <ul>
+            <li><i class="fa-solid fa-check"></i> View employee information</li>
+            <li><i class="fa-solid fa-check"></i> Access your profile</li>
+            <li><i class="fa-solid fa-check"></i> Fast and smooth experience</li>
+        </ul>
+        <a class="option-link" href="/Home/Index">
+            <i class="fa-solid fa-house"></i>
+            Back to Home Page
+        </a>
+    </div>
+
+    <div class="auth-container">
+        <h2><i class="fa-solid fa-right-to-bracket"></i> Employee Login</h2>
+        <form method="post" class="form-grid">
+            <div class="form-field">
+                <label class="form-label" for="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                    Email
+                </label>
+                <div class="input-frame">
+                    <input asp-for="Email" type="email" placeholder="employee@company.com" required />
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label class="form-label" for="Password">
+                    <i class="fa-solid fa-lock"></i>
+                    Password
+                </label>
+                <div class="input-frame">
+                    <input asp-for="Password" type="password" placeholder="••••••••" required />
+                </div>
+            </div>
+
+            <button type="submit" class="btn w-100">
+                <i class="fa-solid fa-arrow-right"></i> Login
+            </button>
+            
+            <div class="auth-footer">
+                <span class="muted">Don't have an account?</span>
+                <a class="option-link" href="/EmployeePortal/Register">
+                    Register here
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </form>
+    </div>
+</section>

@@ -1,0 +1,11 @@
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Domain\bin\Release\net8.0\HRSYS.Domain.deps.json
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Domain\bin\Release\net8.0\HRSYS.Domain.dll
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Domain\bin\Release\net8.0\HRSYS.Domain.pdb
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Domain\obj\Release\net8.0\HRSYS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Domain\obj\Release\net8.0\HRSYS.Domain.AssemblyInfoInputs.cache
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Domain\obj\Release\net8.0\HRSYS.Domain.AssemblyInfo.cs
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Domain\obj\Release\net8.0\HRSYS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Domain\obj\Release\net8.0\HRSYS.Domain.dll
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Domain\obj\Release\net8.0\refint\HRSYS.Domain.dll
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Domain\obj\Release\net8.0\HRSYS.Domain.pdb
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.Domain\obj\Release\net8.0\ref\HRSYS.Domain.dll

@@ -1,0 +1,53 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Choose Portal";
+}
+
+<section class="hero-grid" data-reveal>
+    <div class="hero-copy glass-panel">
+        <p class="eyebrow">
+            <i class="fa-solid fa-star"></i> Welcome to HRSYS
+        </p>
+        <h1>Choose the portal you want to access</h1>
+        <p class="lead">
+            Choose whether you are HR/USER or an Employee. Each portal is designed with its own experience,
+            featuring an interactive design and smooth animations for a seamless workflow.
+        </p>
+        <div class="hero-actions">
+            <a class="btn-cta" href="/Auth/Login">
+                <i class="fa-solid fa-users-gear"></i>
+                Login as HR / User
+            </a>
+            <a class="btn ghost" href="/EmployeePortal/Login">
+                <i class="fa-solid fa-id-badge"></i>
+                Login as Employee
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-options" data-stagger>
+        <article class="option-card" data-reveal>
+            <div class="option-icon user" style="background: linear-gradient(135deg, #6c5ce7, #69eaff);"></div>
+            <h3>
+                <i class="fa-solid fa-users-gear"></i> HR Portal
+            </h3>
+            <p>Manage employees, add users, and follow all HR operations from one place.</p>
+            <a href="/Auth/Login" class="option-link">
+                Go to HR Login
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+        </article>
+
+        <article class="option-card" data-reveal>
+            <div class="option-icon employee" style="background: linear-gradient(135deg, #ff6b6b, #ffa69e);"></div>
+            <h3>
+                <i class="fa-solid fa-user"></i> Employee Portal
+            </h3>
+            <p>Log in, view your profile, and enjoy an interface designed especially for you.</p>
+            <a href="/EmployeePortal/Login" class="option-link">
+                Go to Employee Login
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+        </article>
+    </div>
+</section>

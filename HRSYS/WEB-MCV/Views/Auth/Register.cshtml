@@ -1,0 +1,86 @@
+﻿@model HRSYS.Domain.DTOs.RegisterDto
+@removeTagHelper Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Register";
+}
+
+<section class="auth-grid" data-reveal>
+    <div class="auth-info glass-panel">
+        <p class="eyebrow">Create HR Account</p>
+        <h2>Join Our Team</h2>
+        <p>
+            Create a new HR account to access the employee management system.
+            Fill in your details to get started.
+        </p>
+        <ul>
+            <li><i class="fa-solid fa-check"></i> Secure registration</li>
+            <li><i class="fa-solid fa-check"></i> Multiple user roles</li>
+            <li><i class="fa-solid fa-check"></i> Full system access</li>
+        </ul>
+        <a class="option-link" href="/Auth/Login">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            Already have an account?
+        </a>
+    </div>
+
+    <div class="auth-container">
+        <h2><i class="fa-solid fa-user-plus"></i> Create Account</h2>
+
+        <form method="post" class="form-grid">
+            <div class="form-field">
+                <label class="form-label" for="Username">
+                    <i class="fa-solid fa-user"></i>
+                    Username
+                </label>
+                <div class="input-frame">
+                    <input type="text" name="Username" value="@Model?.Username" placeholder="Choose a username" required />
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label class="form-label" for="Password">
+                    <i class="fa-solid fa-lock"></i>
+                    Password
+                </label>
+                <div class="input-frame">
+                    <input type="password"
+                           name="Password"
+                           value="@Model?.Password"
+                           placeholder="••••••••"
+                           required
+                           minlength="6"
+                           pattern="(?=.*[0-9])(?=.*[A-Z]).{6,}"
+                           title="Must contain at least 1 uppercase letter, 1 number, and be 6+ characters long." />
+                </div>
+                <small class="field-hint">
+                    <i class="fa-solid fa-info-circle"></i>
+                    Min 6 chars, 1 uppercase, 1 number
+                </small>
+            </div>
+
+            <div class="form-field">
+                <label class="form-label" for="Role">
+                    <i class="fa-solid fa-users-gear"></i>
+                    Role
+                </label>
+                <div class="input-frame">
+                    <select name="Role" required>
+                        <option value="">Select your role</option>
+                        <option value="User" @(Model?.Role == "User" ? "selected" : "")>
+                            User
+                        </option>
+                        <option value="HR" @(Model?.Role == "HR" ? "selected" : "")>
+                            HR Administrator
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="btn w-100">
+                <i class="fa-solid fa-arrow-right"></i> Register
+            </button>
+        </form>
+    </div>
+</section>

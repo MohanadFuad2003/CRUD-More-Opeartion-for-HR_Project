@@ -1,0 +1,95 @@
+﻿@model HRSYS.Domain.DTOs.CreateEmployeeDto
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Add Employee";
+}
+
+<section class="form-container" data-reveal>
+    <div class="form-header" data-reveal>
+        <h2 class="page-title">
+            <i class="fa-solid fa-user-plus"></i> Add New Employee
+        </h2>
+        <p class="page-subtitle">Enter employee details to add them to the system</p>
+    </div>
+
+    <div class="card glass-panel mx-auto" style="max-width: 700px;">
+        <form method="post" class="form-grid p-4">
+
+            <div class="form-field">
+                <label class="form-label" for="FullName">
+                    <i class="fa-solid fa-user"></i>
+                    Full Name
+                </label>
+                <div class="input-frame">
+                    <input type="text"
+                           class="form-control"
+                           name="FullName"
+                           value="@Model?.FullName"
+                           placeholder="John Doe"
+                           required />
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label class="form-label" for="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                    Email
+                </label>
+                <div class="input-frame">
+                    <input type="email"
+                           class="form-control"
+                           name="Email"
+                           value="@Model?.Email"
+                           placeholder="john@company.com"
+                           required />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-field">
+                        <label class="form-label" for="Salary">
+                            <i class="fa-solid fa-money-bill"></i>
+                            Salary
+                        </label>
+                        <div class="input-frame">
+                            <input type="number"
+                                   class="form-control"
+                                   name="Salary"
+                                   value="@Model?.Salary"
+                                   placeholder="50000"
+                                   required />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-field">
+                        <label class="form-label" for="Department">
+                            <i class="fa-solid fa-building"></i>
+                            Department
+                        </label>
+                        <div class="input-frame">
+                            <input type="text"
+                                   class="form-control"
+                                   name="Department"
+                                   value="@Model?.Department"
+                                   placeholder="Engineering"
+                                   required />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary w-100">
+                    <i class="fa-solid fa-save"></i> Save Employee
+                </button>
+                <a href="/Employee/Index" class="btn btn-ghost w-100">
+                    <i class="fa-solid fa-arrow-left"></i> Back to List
+                </a>
+            </div>
+
+        </form>
+    </div>
+</section>

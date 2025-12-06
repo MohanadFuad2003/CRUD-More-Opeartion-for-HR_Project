@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "HRSYS.Domain/1.0.0": {
+        "runtime": {
+          "HRSYS.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HRSYS.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

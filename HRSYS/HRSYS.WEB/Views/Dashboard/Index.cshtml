@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+}
+
+<h2 class="mb-4">Employee Management</h2>
+
+<a href="/Dashboard/Create" class="btn btn-success mb-3">+ Add Employee</a>
+
+<form method="get" action="/Dashboard/SearchById" class="mb-3">
+    <div class="input-group">
+        <input type="number" name="id" class="form-control" placeholder="Search by ID..." required />
+        <button class="btn btn-primary">Search</button>
+    </div>
+</form>
+
+<table class="table table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Salary</th>
+            <th>Department</th>
+            <th width="180">Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var emp in Model)
+        {
+            <tr>
+                <td>@emp.empID</td>
+                <td>@emp.fullName</td>
+                <td>@emp.email</td>
+                <td>@emp.salary</td>
+                <td>@emp.department</td>
+
+                <td>
+                    <a href="/Dashboard/Edit/@emp.empID" class="btn btn-warning btn-sm">Edit</a>
+                    <a href="/Dashboard/Delete/@emp.empID"
+                       onclick="return confirm('Are you sure?')"
+                       class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

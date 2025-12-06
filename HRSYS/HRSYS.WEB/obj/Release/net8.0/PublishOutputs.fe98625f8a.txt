@@ -1,0 +1,7 @@
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.WEB\obj\Release\net8.0\PubTmp\Out\HRSYS.WEB.exe
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.WEB\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.WEB\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.WEB\obj\Release\net8.0\PubTmp\Out\HRSYS.WEB.dll
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.WEB\obj\Release\net8.0\PubTmp\Out\HRSYS.WEB.deps.json
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.WEB\obj\Release\net8.0\PubTmp\Out\HRSYS.WEB.runtimeconfig.json
+C:\Users\ali-Dweik-infra\Desktop\HRSYS\HRSYS\HRSYS.WEB\obj\Release\net8.0\PubTmp\Out\HRSYS.WEB.pdb
